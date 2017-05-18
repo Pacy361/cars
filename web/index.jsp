@@ -19,7 +19,7 @@
     <a href="qq/index.jsp">qq</a>
   </h1>
   <h1>
-    <a href="http://app.createclouds.cn">??????/a>
+    <a href="http://app.createclouds.cn">毕业设计</a>
   </h1>
   </body>
 </html>
