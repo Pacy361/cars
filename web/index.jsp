@@ -13,6 +13,7 @@
   <body>
   <h1>welcome to cars</h1>
   <hr>
+  <% out.println("Hello,World");%>
   <h1>
     <a href="http://app.createclouds.cn">app</a>
   </h1>
