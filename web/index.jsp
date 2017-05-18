@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8"%>
 <html>
   <head>
-    <title>show</title>
+    <title>Show</title>
   </head>
   <body>
   <h1>
@@ -19,7 +19,7 @@
     <a href="qq/index.jsp">qq</a>
   </h1>
   <h1>
-    <a href="http://app.createclouds.cn">±œ“µ…Ëº∆</a>
+    <a href="http://app.createclouds.cn">??????/a>
   </h1>
   </body>
 </html>
