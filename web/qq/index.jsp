@@ -12,11 +12,7 @@
   </head>
   <body>
   <h1>
-    <a href="baidu/index.jsp">baidu</a>
-  </h1>
-  <hr>
-  <h1>
-    <a href="qq/index.jsp">qq</a>
+    <a href="http://www.qq.com">QQ.com</a>
   </h1>
   </body>
 </html>
