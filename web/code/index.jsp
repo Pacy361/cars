@@ -12,7 +12,7 @@
   </head>
   <body>
   <h1>
-    <a href="code/index.jsp">code</a>
+    <a href="http://www.baidu.com">Baidu.com</a>
   </h1>
   </body>
 </html>
