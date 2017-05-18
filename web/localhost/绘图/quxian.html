@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>绘制弧线和曲线</title>
+  <style>
+    body{
+	   margin: 10px;
+	   padding:25px;
+	}
+	 #my_canvas{
+	   border: 2px solid #33ffff;
+	 }
+  </style>
+  <script type = "text/javascript">
+     window.onload = function(){
+	   var canvas = document.getElementById("my_canvas");
+	   var context = canvas.getContext("2d");
+       //绘制弧线
+	   context.beginPath();
+	   context.moveTo(50,20);
+	   context.lineTo(100,20);
+	   context.arcTo(150,20,150,70,50);//在画布创建介于两个切线之间的曲/弧线 起点（150,20） 终点（150,70） 半径：50
+	   context.lineTo(150,120);
+	   context.strokeStyle = "blue";
+	   context.lineWwidth = 8;
+	   context.stroke();
+	   //绘制二次贝塞尔曲线
+       context.beginPath();
+	   context.moveTo(280,canvas.height/2);//起始点
+	   context.quadraticCurveTo(300,0,400,180);//控制点（300,0），终止点（400,180）
+	   context.lineWidth = 10;//设置绘制线的粗细
+	   context.strokeStyle = "red";
+	   context.stroke();
+
+	   //绘制三次贝塞尔曲线
+       context.beginPath();
+	   context.moveTo(460,160);//起始点
+	   context.bezierCurveTo(350,10,520,15,630,100);//两个控制点（350,10）、（520,15），终点（630,100）
+	   context.lineWidth = 6;//设置绘制线的粗细
+	   context.strokeStyle = "#cc00cc";
+	   context.stroke();
+	 }
+  </script>
+ </head>
+ <body>
+   <canvas id = "my_canvas" width = "800" height = "450">
+     浏览器不支持，请更换浏览器
+   </canvas>
+ </body>
+</html>

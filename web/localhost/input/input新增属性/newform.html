@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>newform</title>
+ </head>
+ <body>
+ <!--enctype 属性规定在发送到服务器之前应该如何对表单数据进行编码。
+默认地，表单数据会编码为 "application/x-www-form-urlencoded"。就是说，在发送到服务器之前，所有字符都会进行编码（空格转换为 "+" 加号，特殊符号转换为 ASCII HEX 值）。
+  novalidate属性规定当提交表单时不对其进行验证。如果使用该属性，则表单不会验证表单的输入。-->
+  <!-- <form action = "#" enctype = "application/x-www-form-urlencoded" id = "testform" method = "post" novalidate = "novalidate">-->
+   <form action = "#" enctype = "application/x-www-form-urlencoded" id = "testform" method = "post" >
+     请输入email：<input type = "email" name = "userid"/><br>
+	 <input type = "submit" value = "action" formaction = "list.html"/><!--修改表单向何处提交数据-->
+	 <input type = "submit" value = "method" formmethod = "post"/><!--修改表单的提交方式-->
+	 <input type = "submit" value = "enctype" formenctype = "text"/><!--修改对表单数据的编码方式-->
+	 <input type = "submit" value = "novalidate" formnovalidate = "formvalidate"/><!--修改提交表单时是否需要验证-->
+ <!--修改在何处打开action URL 共有四种  1. "_self"  默认在相同的框架中打开。
+  2. "_blank"  在新窗口中打开。  3. "_parent"  在父框架集中打开   4.  "_top"  在整个窗口中打开 5. "framename"  在指定的框架中打开。-->
+	 <input type = "submit" value = "target"formtarget = "_blank"/>
+	
+   </form>
+ </body>
+</html>
