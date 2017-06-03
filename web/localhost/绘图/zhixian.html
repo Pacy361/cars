@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>绘制直线</title>
+  <!--margin:外边距  padding：内边距，  border：边框-->
+  <style>
+     body{
+	   margin:10px;
+	   padding:150px;
+	 }
+     #my_canvas{
+	     border: 2px solid #000000;
+	 }
+  </style>
+  <script type = "text/javascript">
+    window.onload = function(){
+	    var canvas = document.getElementById("my_canvas");
+		var context = canvas.getContext("2d");
+		context.beginPath();//定义了一个新的路径绘制动作的开始
+		context.moveTo(canvas.width/2,300);//起点
+		context.lineTo(canvas.width/2,canvas.height-200);//终点
+		context.lineWidth = 20;//直线的宽度
+		context.strokeStyle = "#0033ff";//直线的颜色
+		context.lineCap = "butt";//直线端点的样式，缺省的情况下，默认为butt
+		context.stroke();
+
+		context.beginPath();
+		context.moveTo(canvas.width/2+100,300);
+		context.lineTo(canvas.width/2+100,canvas.height-200);
+		context.lineWidth = 20;
+		context.strokeStyle = "#0033ff";
+		context.lineCap = "square";
+		context.stroke();
+
+		context.beginPath();
+		context.moveTo(canvas.width/2-100,300);
+		context.lineTo(canvas.width/2-100,canvas.height-200);
+		context.lineWidth = 20;
+		context.strokeStyle = "#0033ff";
+		context.lineCap = "round";
+		context.stroke();
+	}
+  </script>
+ </head>
+ <body>
+  <canvas id = "my_canvas" width = "680" height = "380">
+  不支持canvas元素，请更换浏览器
+  </canvas>
+ </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>list</title>
+ </head>
+ <body>
+  <form action = "#" method = "get">
+    <!--url 类型用于应该包含 URL 地址的输入域。在提交表单时，会自动验证 url 域的值。 -->
+    请输入网址：<input type = "url" list = "url_list" name = "weblink"/><br>
+	<!--datalist 元素规定输入域的选项列表。
+     列表是通过 datalist 内的 option 元素创建的。
+     如需把 datalist 绑定到输入域，请用输入域的 list 属性引用 datalist 的 id
+     -->
+	<datalist id = "url_list">
+	   <option label = "新浪" value = "http://www.sina.com.cn"/>
+	   <option label = "百度" value = "http://www.baidu.com"/>
+	   <option label = "网易" value = "http://www.163.com"/>
+	</datalist>
+	<input type = "submit" value = "提交"/>
+  </form>
+ </body>
+</html>

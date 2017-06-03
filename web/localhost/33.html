@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+ function person(){
+person=new Object();                                               //创建对象
+person.firstname="健林";                                            //创建对象名字
+person.lastname="王";                                        //创建对象姓
+person.age=56;                                                         //创建对象年龄
+person.eyecolor="黑";    										//创建对象眼睛的颜色
+person.goal="一个亿";                                          //年目标
+return document.write("我叫："+person.lastname+person.firstname + " <br/>今年： " + person.age + "岁了<br/>"+"我的眼睛的颜色是："+person.eyecolor+"色的<br/>给自己定了一个小目标："+person.goal);
+
+}
+</script>
+<div>
+<p onclick="person()">点击查看个信息</p>
+</div>
+</body>
+</html>

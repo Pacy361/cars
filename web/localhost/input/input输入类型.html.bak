@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>input新增输入类型</title>
+ </head>
+ <body>
+    <!--form表单的属性action作用：将表单提交给服务端的哪个程序进行处理，此处的#表示空    method作用：提交的方式：get/post-->
+    <form action = "#" method = "">
+	   <input type = "email" name = "user_email"/><br>
+	   <!--提交按钮submit-->
+	   <input type = "submit" value = "提交"/><br>
+	   <input type = "url" name = "user_url"/><br>
+	  <li>年龄：<input type = "number" name = "user_namber"/ value = "0" min = "0" max = "150"  step = "2"/><li><br>
+	   <li>经验值：<input type = "range" name = "user_range" value = "35" max = "100"/></li><br>
+	   <input type = "date" name = "user_date"/><br>
+	   <input type = "month" name = "user_month" value = "2016-01-01"/><hr>
+	   <input type = "week" name = "user_week" value = "10" max = "52"/><br>
+	   <input type = "time" name = "user_time" value = "00:00:00" min = "00:00:00" max = "24:59:59" /><br>
+	   <!--datetime为UTC时间，世界标准时间，跟中国大陆相差八小时，用于互联网和万维网的标准时间当中-->
+	   <input type = "datetime" name = "user_datetime"/><br>
+	   <!--系统本地时间-->
+	    <input type = "datetime-local" name = "user_datetime-local"/><br>
+		<!--用于输入搜索字符串的文本字段，也是一个文本框，只是文本框最后多了一个叉号-->
+	   <input type = "search" name = "user_seach"/><br>
+	   <input type = "telephone" name = "user_telephone"/><br>
+	   <!--定义拾色器-->
+       <input type = "color" name = "user_color"/><br>
+	   <!--等价于  <button type = "submit">提交</button>-->
+	</form>
+ </body>
+</html>

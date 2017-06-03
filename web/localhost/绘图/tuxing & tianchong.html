@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>图形的绘制与颜色的填充</title>
+  <style>
+    body{
+	   margin: 10px;
+	   padding:25px;
+	}
+	 #my_canvas{
+	   border: 2px solid #000000;
+	   background-color:#66ffff;
+	 }
+  </style>
+  <script type = "text/javascript">
+     window.onload = function(){
+	   var canvas = document.getElementById("my_canvas");
+	   var context = canvas.getContext("2d");
+	   //绘制矩形
+	   context.beginPath();
+	   context.rect(10,30,150,230);
+	   context.lineWidth = 5;
+	   context.strokeStyle = "#6633cc";
+	   context.stroke();
+	   context.fillStyle = "#ffff33";//设置填充色
+	   context.fill();//填充
+	   //绘制圆形
+       context.beginPath();
+	   //圆心
+	   //var centerx = 200;
+	   //var centery = 20；
+	   //var radius = 60;//半径
+	   //context.arc(centerx,centery,radius,0,Math.PI*2,true);
+	   context.arc(280,150,60,0,Math.PI*2,true);//0:从零角度开始画，画360度，false表示顺时针，true表示逆时针
+	   context.lineWidth = 5;
+	   context.strokeStyle = "black";
+	   context.stroke();
+	   context.fillStyle = "#ff3333";//设置填充色
+	   context.fill();//填充
+	 };
+   </script>
+ </head>
+ <body>
+   <canvas id = "my_canvas" width = "800" height = "450">
+     浏览器不支持，请更换浏览器
+   </canvas>
+ </body>
+</html>

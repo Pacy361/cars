@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Discuz-PHP开源论坛</title>
+  <style>
+  div#container{
+    width:70%;
+  }
+  div#header{
+    height:100px;
+	float:left;
+  }
+  div#body{
+    height:1000px;
+	float:left;
+  }
+  div#footer{
+    height:100px;
+	float:left;
+	position:absolute;
+	left:180px;
+	top:800px;
+  }
+    #form1{ 
+	  float:right;
+	  position:absolute;
+	  left:730px;
+	  top:10px;
+	}
+	#img1{
+	  float:left;
+	  position:absolute;
+	  left:200px;
+	  top:10px;
+	}
+    ul.ul1{ 
+	  list-style-type:none;
+	  margin:0;
+	  padding:0;
+	  padding-top:6px;
+      padding-bottom:6px;
+	  position:absolute;
+	  left:200px;
+	  top:100px;
+	  background-color:#6666ff;
+	}
+    ul.ul2{
+	  list-style-type:none;
+	  margin:0;
+	  padding:0;
+	  padding-top:6px;
+      padding-bottom:6px;
+	  position:absolute;
+	  left:200px;
+	  top:180px;
+	}
+	li{
+	  display:inline;
+	}
+	ul.a:link{
+	  font-weight:bold;
+      color:#ffffff;
+      background-color:#6666ff;
+      padding:6px;
+	  text-decoration: none;
+	}
+	/*
+	a:link,a:visited
+    {
+      display:block;
+      width:200px;
+      font-weight:bold;
+      color:#663399;
+      background-color:#6666ff;
+      text-align:center;
+      padding:6px;
+      text-decoration: none;
+      text-transform:uppercase;
+     }
+	 */
+	 /*
+     a:hover,a:active
+     {
+       background-color:#6699ff;
+     }
+	 */
+	 #username1{
+	   display:none;
+	 }
+	 #searchbox{
+	    float:left;
+	    position:absolute;
+	    left:250px;
+	    top:130px;
+	 }
+	 #div1{
+	    width:100px;
+	 }
+	 #img2{
+	   float:left;
+	   position:absolute;
+	   left:200px;
+	   top:130px;
+	 }
+	 a.a1{
+	   float:left;
+	   position:absolute;
+	   left:200px;
+	   top:160px;
+ }
+   table.table1{
+       float:left;
+	   position:absolute;
+	   left:200px;
+	   top:210px;
+	   border-collapse:collapse;
+	   border: 1px solid #66ccff;
+       width:70%;
+   }
+   table.table2{
+     float:left;
+	 position:absolute;
+	 left:200px;
+	 top:500px;
+	 border-collapse:collapse;
+	 border:1px solid #66ccff;
+	 width:70%;
+   }
+   table.table3{
+     float:left;
+	 position:absolute;
+	 left:200px;
+	 top:630px;
+	 border-collapse:collapse;
+	 border:1px solid #66ccff;
+	 width:70%;
+   }
+
+   
+  </style>
+  
+ </head>
+ <body>
+ <div id = "container">
+ <div id = "header">
+   <div>
+      <div><img src= "a.PNG" id = "img1"/></div>
+      <div>
+	    <form action = "#" method = "post" id = "form1">
+	      <select>
+	         <option value = "username1">用户名</option>
+		     <option value = "Email">Email</option>
+	      </select>
+	      <input type = "text" name = "">
+	      <label><input type = "checkbox">自动登录</label>
+	      <span><a href = "#" >找回密码</a><br></span>
+	      <!--用户名:<input type = "text" name = "username"/><br>-->
+	      密码:  <input type = "password" name = "uesr_password"/>
+	       <input type = "submit" value = "登录"/>
+	       <a href = "#">立即注册</a><br>
+	     </form>
+       </div>
+   </div>
+   <div>
+	    <ul class = "ul1">
+	      <li><a href = "#" >论坛首页</a></li>
+		  <li><a href = "#">文档资料</a></li>
+		  <li><a href = "#">腾讯云主机</a></li>
+		  <li><a href = "#">服务购买</a></li>
+		  <li><a href = "#">微社区</a></li><br>
+	    </ul>
+   </div>
+</div>
+ <div id = "body">
+    <div id = "div1">
+	    <div><img src = "b.PNG" id = "img2"/></div>
+		<div>
+	    <form id="searchbox">  
+          <input  class="placeholder" id="search" placeholder="请输入搜索内容" type="text"> 
+          <input id="submit" value="搜索" type="submit"width = 50px><br>
+        </form> 
+		</div>
+	</div>
+    <p><a href = "#" class = "a1">论坛首页</a></p>
+	<div> 
+	  <ul class = "ul2">
+	    <li>今日：45|</li>
+		<li>昨日：350|</li>
+		<li>帖子：123345|</li>
+		<li>会员：76446|</li>
+		<li>欢迎新用户：<a href = "#">小铭</a></li><br>
+	  </ul>
+	</div>
+	<div>
+	  <table border = "1" class = "table1">
+		<tr> 
+		  <th bgcolor = "#ccccff" align="left" colspan = "2">学习交流</th>
+		  <th></th>
+		</tr>
+	    <tr> 
+		  <td>学习经验交流
+		    <ul>
+		     <li>主题：75，帖数：88</li><br>
+			 <li><a href = "#" class = "a2">Apache服务层次</a> 昨天  16:23 manager</li>
+		    </ul>
+		  </td>
+		  <td>最新技术交流
+		    <ul>
+		     <li>主题：10，帖数：23</li><br>
+			 <li><a href = "#" class = "a3">centos6.5升级python</a>2017-5-10 20:08  manager</li>
+		    </ul>
+		  </td>
+		</tr>
+		<tr> 
+		  <td>web笔记分享
+		    <ul>
+		     <li>主题：7，帖数：8</li><br>
+			 <li><a href = "#" class = "a4">HTML5新增属性</a>2017-5-6 10:08  manager</li>
+		    </ul>
+		  </td>
+		  <td>web前端开发
+		  <ul>
+		     <li>主题：12，帖数：8</li><br>
+			 <li><a href = "#" class = "a5">PHPstudy的安装</a>2017-4-23 10:33  manager</li>
+		    </ul></td>
+		</tr>
+		<tr> 
+		  <td>招聘经验交流
+		    <ul>
+		     <li>主题：34，帖数：22</li><br>
+			 <li><a href = "#" class = "a6">web实习相关信息</a>2017-5-24 22:08  manager</li>
+		    </ul>
+		  </td>
+		  <td></td>
+		</tr>
+	</div>
+	<table border = "1" class = "table2">
+		<tr> 
+		  <th bgcolor = "#ccccff" align="left" colspan = "2">资源分享</th>
+		  <th></th>
+		</tr>
+	    <tr> 
+		  <td>视频资源分享
+		    <ul>
+		     <li>主题：6，帖数：7</li><br>
+			 <li><a href = "#" class = "a7">HTML5学习视频</a> 昨天  16:23 kangaroo</li>
+		    </ul>
+		  </td>
+		  <td>书籍资源分享
+		    <ul>
+		     <li>主题：3，帖数：5</li><br>
+			 <li><a href = "#" class = "a8">SQL必知必会</a>2017-5-10 20:08  admin</li>
+		    </ul>
+		  </td>
+		</tr>
+	</table>
+	<table border = "1" class = "table3">
+		<tr> 
+		  <th bgcolor = "#ccccff" align="left"><a href = "#" class = "a9">在线会员</a>-3人在线-0会员（0隐身），3位游客-最高记录是74于2017-5-1</th>
+		  <th></th>
+		</tr>
+	    <tr> 
+		  <td>视频资源分享
+		    <ul>
+		     <li>管理员</li>
+			 <li>超级版主</li>
+			 <li>版主</li>
+			 <li>会员</li>
+		    </ul>
+		  </td>
+		</tr>
+		<tr>
+		  <td>当前只有游客或隐身会员在线</td>
+		</tr>
+	</table>
+</div>
+
+  <div id = "footer">
+   <div>
+    <ul> 
+	  <li>Powered by <a href = "#" color = "black">Discuz!</a> X2.5</li><br>
+	  <li>© 2001-2012<a href = "#"> Comsenz Inc.</a></li>
+	</ul>
+   </div>
+   <div>
+     <ul> 
+	   <li><a href = "#">手机版</a>|  |<a href = "#">Archiver</a></li><br>
+	   <li>GMT+8, 2017-5-25 14:46 , Processed in 0.090310 second(s), 2 queries , Gzip On, Memcache On</li>
+	 </ul>
+   </div>
+  </div>
+</div>
+ </body>
+</html>
