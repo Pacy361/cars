@@ -1,0 +1,5 @@
+将HTML文件传入git，以便了解对文件的各种改变
+所有的文件都放在E:\cars\web下
+1.打开git，选择E:\cars，Rescan-->Stage Changed（Commit Message里记录下对文件所做的改动）-->Commit-->Push  即可将改动的记录
+存放在web端
+访问路径：访问前缀：http://show.createclouds.cn/  但默认首页需要明确指定 http：//show.createclouds.cn/index.html
